@@ -1,9 +1,11 @@
 body {
     margin: 0;
     min-height: 100dvh;
+    margin-bottom: 50px;
 
     display: flex;
     flex-flow: column;
+    align-items: center;
     gap: 20px;
 
     font-family: 'Rubik', sans-serif;
@@ -15,6 +17,14 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0;
 }
 
 .details_container {
@@ -31,10 +41,6 @@ a {
 
 .details_link {
     cursor: pointer;
-}
-
-.details_link:hover {
-    text-decoration: underline;
 }
 
 .details_name {
@@ -144,4 +150,46 @@ a {
 .slice_item_description.hidden {
     display: none;
     visibility: none;
+}
+
+.tech_stack_container {
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.tech_stack_container_title {
+    font-size: 1.375rem;
+    font-weight: 500;
+}
+
+.tech_stack_items {
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.tech_stack {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.tech_stack_title {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.tech_stack_value {
+    font-size: 1rem;
+    font-weight: 500;
 }
